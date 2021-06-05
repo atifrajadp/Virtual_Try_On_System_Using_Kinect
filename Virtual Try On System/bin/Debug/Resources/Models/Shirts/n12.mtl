@@ -1,0 +1,20 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl Material.001
+Ns 96.078431
+Ka 1.000 1.000 1.000     
+Kd 1.000 1.000 1.000     
+Ks 0.000 0.000 0.000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd ..\..\Materials\g6.jpg
+newmtl T_Shirt
+Ns 3.921569
+Ka 0.000000 0.000000 0.000000
+Kd 0.241600 0.366400 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2

@@ -1,0 +1,28 @@
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\obj\Debug\Virtual_Try_On_System_UnitTests.csprojResolveAssemblyReference.cache
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Virtual_Try_On_System_UnitTests.dll
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Virtual_Try_On_System_UnitTests.pdb
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Virtual Try On System.exe
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\HelixToolkit.Wpf.dll
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Microsoft.Practices.Prism.Mvvm.dll
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.dll
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Virtual Try On System.pdb
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\HelixToolkit.Wpf.pdb
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\HelixToolkit.Wpf.xml
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Microsoft.Practices.Prism.Mvvm.xml
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.xml
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\obj\Debug\Virtual_Try_On_System_UnitTests.dll
+G:\7th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\obj\Debug\Virtual_Try_On_System_UnitTests.pdb
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Virtual_Try_On_System_UnitTests.dll
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Virtual_Try_On_System_UnitTests.pdb
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Virtual Try On System.exe
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\HelixToolkit.Wpf.dll
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Microsoft.Practices.Prism.Mvvm.dll
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.dll
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Virtual Try On System.pdb
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\HelixToolkit.Wpf.pdb
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\HelixToolkit.Wpf.xml
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Microsoft.Practices.Prism.Mvvm.xml
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\bin\Debug\Microsoft.Practices.Prism.SharedInterfaces.xml
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\obj\Debug\Virtual_Try_On_System_UnitTests.csprojResolveAssemblyReference.cache
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\obj\Debug\Virtual_Try_On_System_UnitTests.dll
+G:\8th Semester\CS-490 Final Year Project\Virtual Try On System\Virtual_Try_On_System_UnitTests\obj\Debug\Virtual_Try_On_System_UnitTests.pdb

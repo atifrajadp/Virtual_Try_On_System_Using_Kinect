@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Virtual_Try_On_System.App" Collapsed="true">
+    <Position X="38" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.MainWindow" Collapsed="true">
+    <Position X="32.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAgAAAAIAE=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.Converters.BitmapToImageSourceConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\BitmapToImageSourceconverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Virtual_Try_On_System.Converters.BoolToVisibilityConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="39.75" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\BoolToVisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Virtual_Try_On_System.Converters.DebugConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="36" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\DebugConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Virtual_Try_On_System.Converters.IncreasedValueConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\IncreasedValueConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Virtual_Try_On_System.Converters.ReducedValueConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="29.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\ReducedValueConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Virtual_Try_On_System.Converters.ValueToVisibilityConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converters\ValueToVisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Virtual_Try_On_System.Model.ClothingItems.ClothingItemBase" Collapsed="true">
+    <Position X="22.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQACAABEAgAIgAAgAIIQAALYAEgAIKAAAIY=</HashCode>
+      <FileName>Model\ClothingItems\ClothingItemBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.Model.ClothingItems.ShirtItem" Collapsed="true">
+    <Position X="22" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ClothingItems\ShirtItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.Model.ClothingItems.TrouserItem" Collapsed="true">
+    <Position X="23.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\ClothingItems\TrouserItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.Model.Debug.SkeletonManager" Collapsed="true">
+    <Position X="27" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAEAAAAgAAAAAQgAAABAkAAAAAAAAAAE=</HashCode>
+      <FileName>Model\Debug\SkeletonManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.Properties.Resources" Collapsed="true">
+    <Position X="32.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAACAAocAABMAoAAQAEgAAHAAAAAQAgAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.Properties.Settings" Collapsed="true">
+    <Position X="42.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Buttons.Events.ButtonsManager" Collapsed="true">
+    <Position X="22.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAABQAAAAAQAAAAAAAAAAAgAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>View\Buttons\Events\ButtonsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Buttons.Events.HandCursorEventArgs" Collapsed="true">
+    <Position X="38.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>View\Buttons\Events\HandCursorEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Buttons.Events.KinectEvents" Collapsed="true">
+    <Position X="37" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQgAACAAAAAAAMAgAAAAAAABIQEEEAAABAAAAAII=</HashCode>
+      <FileName>View\Buttons\Events\KinectEvents.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Buttons.Events.KinectInput" Collapsed="true">
+    <Position X="36" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAACAAAAAAAMAgAAAAAAABIQAEEAAABAAAAAIA=</HashCode>
+      <FileName>View\Buttons\Events\KinectInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Buttons.KinectButton" Collapsed="true">
+    <Position X="20.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkkAIjAAKRAQAAAAEIAADBCEAEBKAAAEAEAAAQAAgIA=</HashCode>
+      <FileName>View\Buttons\KinectButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Buttons.KinectRepeatableButton" Collapsed="true">
+    <Position X="22.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Buttons\KinectRepeatableButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Buttons.KinectScreenshotButton" Collapsed="true">
+    <Position X="19.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCACAQEAAAAAAIAAEAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Buttons\KinectScreenshotButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Helpers.DataTemplate3D" Collapsed="true">
+    <Position X="44.75" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View\Helpers\DataTemplate3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Helpers.HelixViewport3DEx" Collapsed="true">
+    <Position X="42.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAoAgAAEABAAIAAAACAAgAgAAIAAAAAAAAA=</HashCode>
+      <FileName>View\Helpers\HelixViwport3DEx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Helpers.ItemsVisual3D" Collapsed="true">
+    <Position X="39.75" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAABAAAAAAAAEABAIAAAAA=</HashCode>
+      <FileName>View\Helpers\ItemsVisual3D.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Helpers.ScrollableCanvas" Collapsed="true">
+    <Position X="40.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAIAAAIEAAAAAAEQFAAEIBMCgCCgBECEBAEIFAAJA=</HashCode>
+      <FileName>View\Helpers\ScrollableCanvas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View.Helpers.SizeObserver" Collapsed="true">
+    <Position X="18.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAIAgTQAAAgAAAAAAAAAIAAgABE=</HashCode>
+      <FileName>View\Helpers\SizeObserver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.ButtonViewModelBase" Collapsed="true">
+    <Position X="19.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAgAAgAAAAAQBAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\ButtonViewModelBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.ClothingButtonViewModel" Collapsed="true">
+    <Position X="17.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAABAQEAAAAAAAAAAAAACAAAQAAAAAACAA=</HashCode>
+      <FileName>View Model\ButtonItems\ClothingButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.ClothingCategoryButtonViewModel" Collapsed="true">
+    <Position X="18.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAQAAAAgAAAAAAAAAAAEAQAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\ClothingCategoryButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.ShirtButtonViewModel" Collapsed="true">
+    <Position X="16" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\ShirtButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TrouserButtonViewModel" Collapsed="true">
+    <Position X="17" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TrouserButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.ClearItemsButtonViewModel" Collapsed="true">
+    <Position X="20.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\ClearItemsButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.ClearSetButtonViewModel" Collapsed="true">
+    <Position X="23" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\ClearSetButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.ExitButtonViewModel" Collapsed="true">
+    <Position X="27.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\ExitButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.MenuButtonViewModel" Collapsed="true">
+    <Position X="29.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\MenuButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.NoCloseButtonViewModel" Collapsed="true">
+    <Position X="27.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\NoCloseButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.ScreenshotButtonViewModel" Collapsed="true">
+    <Position X="28.25" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\ScreenshotButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.SoundsButtonViewModel" Collapsed="true">
+    <Position X="32.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\SoundsButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.TopMenuButtonViewModel" Collapsed="true">
+    <Position X="20.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\TopMenuButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.TopMenuManager" Collapsed="true">
+    <Position X="25.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAnQAgIAAAMAoEEAADAAACAAAAAAAIAQICAAAAQAAg=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\TopMenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ButtonItems.TopMenuButtons.YesCloseButtonViewModel" Collapsed="true">
+    <Position X="25.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ButtonItems\TopMenuButtons\YesCloseButtonViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ClothingManager" Collapsed="true">
+    <Position X="29" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIkAAAAAAAAAEBCQAgAAAAAAAgEgAAWQIABAAABAUQ=</HashCode>
+      <FileName>View Model\ClothingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.HandTracking" Collapsed="true">
+    <Position X="25.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CBAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAABAgAAAAAAA=</HashCode>
+      <FileName>View Model\HandTracking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.KinectService" Collapsed="true">
+    <Position X="27.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>yABAAAAADCEABQAgAgAFAEACAAAARIAAEBAKAEIAAIY=</HashCode>
+      <FileName>View Model\KinectService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.KinectViewModel" Collapsed="true">
+    <Position X="29.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IACAAAIAAAAAgAAAQAAgAAAAAAAAAAAQAAAAAQAAAAE=</HashCode>
+      <FileName>View Model\KinectViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.KinectViewModelLoader" Collapsed="true">
+    <Position X="30" Y="13.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAEAAAAE=</HashCode>
+      <FileName>View Model\KinectViewModelLoader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.ViewModelBase" Collapsed="true">
+    <Position X="23" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>View Model\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Virtual_Try_On_System.View_Model.Helpers.OrderedDictionary&lt;TKey, TValue&gt;" Collapsed="true">
+    <Position X="44.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAEgAAACAAABAQAAAAAAAAAAAEiAAAAAAA=</HashCode>
+      <FileName>View Model\Helpers\OrderedDictionary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Virtual_Try_On_System.View_Model.IKinectService" Collapsed="true">
+    <Position X="40.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>View Model\IKinectService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="Virtual_Try_On_System.View.Buttons.Events.HandCursorEventHandler" Collapsed="true">
+    <Position X="40.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>View\Buttons\Events\KinectInput.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,680 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42167CA8-E9D9-4360-902B-C4F27B43C924}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Virtual_Try_On_System</RootNamespace>
+    <AssemblyName>Virtual Try On System</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HelixToolkit">
+      <HintPath>..\packages\HelixToolkit.2015.1.453\lib\portable-net4+sl4+wp71+win8\HelixToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="HelixToolkit.Wpf">
+      <HintPath>..\packages\HelixToolkit.Wpf.2015.1.453\lib\net45\HelixToolkit.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Kinect, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.Prism.Composition">
+      <HintPath>..\packages\Prism.Composition.5.0.0\lib\NET45\Microsoft.Practices.Prism.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Interactivity">
+      <HintPath>..\packages\Prism.Interactivity.5.0.0\lib\NET45\Microsoft.Practices.Prism.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Mvvm">
+      <HintPath>..\packages\Prism.Mvvm.1.0.0\lib\net45\Microsoft.Practices.Prism.Mvvm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Mvvm.Desktop">
+      <HintPath>..\packages\Prism.Mvvm.1.0.0\lib\net45\Microsoft.Practices.Prism.Mvvm.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.PubSubEvents">
+      <HintPath>..\packages\Prism.PubSubEvents.1.0.0\lib\portable-sl4+wp7+windows8+net40\Microsoft.Practices.Prism.PubSubEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.SharedInterfaces">
+      <HintPath>..\packages\Prism.Mvvm.1.0.0\lib\net45\Microsoft.Practices.Prism.SharedInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Converters\BitmapToImageSourceconverter.cs" />
+    <Compile Include="Converters\BoolToVisibilityConverter.cs" />
+    <Compile Include="Converters\DebugConverter.cs" />
+    <Compile Include="Converters\IncreasedValueConverter.cs" />
+    <Compile Include="Converters\ReducedValueConverter.cs" />
+    <Compile Include="Converters\ValueToVisibilityConverter.cs" />
+    <Compile Include="Database\Datainsertion.cs" />
+    <Compile Include="Database\Dataretrieval.cs" />
+    <Compile Include="Model\ClothingItems\ClothingItemBase.cs" />
+    <Compile Include="Model\ClothingItems\ShirtItem.cs" />
+    <Compile Include="Model\ClothingItems\TrouserItem.cs" />
+    <Compile Include="Model\Debug\SkeletonManager.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View Model\ButtonItems\ButtonViewModelBase.cs" />
+    <Compile Include="View Model\ButtonItems\ClothingButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\ClothingCategoryButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\ShirtButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\ClearItemsButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\ClearSetButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\ExtraLargeSizeButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\LargeSizeButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\MediumSizeButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\MenuButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\OkButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\OrderButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\ScreenshotButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\SmallSizeButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\SoundsButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\TopMenuButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\TopMenuManager.cs" />
+    <Compile Include="View Model\ButtonItems\TopMenuButtons\PlusButtonViewModel.cs" />
+    <Compile Include="View Model\ButtonItems\TrouserButtonViewModel.cs" />
+    <Compile Include="View Model\ClothingManager.cs" />
+    <Compile Include="View Model\HandTracking.cs" />
+    <Compile Include="View Model\Helpers\OrderedDictionary.cs" />
+    <Compile Include="View Model\IKinectService.cs" />
+    <Compile Include="View Model\KinectService.cs" />
+    <Compile Include="View Model\KinectViewModel.cs" />
+    <Compile Include="View Model\KinectViewModelLoader.cs" />
+    <Compile Include="View Model\ViewModelBase.cs" />
+    <Compile Include="View\Buttons\Events\ButtonsManager.cs" />
+    <Compile Include="View\Buttons\Events\HandCursorEventArgs.cs" />
+    <Compile Include="View\Buttons\Events\KinectEvents.cs" />
+    <Compile Include="View\Buttons\Events\KinectInput.cs" />
+    <Compile Include="View\Buttons\KinectButton.cs" />
+    <Compile Include="View\Buttons\KinectRepeatableButton.cs" />
+    <Compile Include="View\Buttons\KinectScreenshotButton.cs" />
+    <Compile Include="View\Helpers\DataTemplate3D.cs" />
+    <Compile Include="View\Helpers\HelixViwport3DEx.cs" />
+    <Compile Include="View\Helpers\ItemsVisual3D.cs" />
+    <Compile Include="View\Helpers\ScrollableCanvas.cs" />
+    <Compile Include="View\Helpers\SizeObserver.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resources\Styles\GlassButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Styles\RoundButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Resources\dress_beige.obj" />
+    <None Include="Resources\Models\Shirts\tshirt_navy.obj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CameraClick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Categories\shirt_symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Categories\trouser_symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Menu\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Menu\menu_camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Menu\menu_clear set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Menu\menu_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Menu\menu_doors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icons\Menu\menu_speaker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonClick.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\curtains.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\watermark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tshirt_navy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Shirts\tshirt_coral_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images\Shirts\tshirt_green_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pant_jeans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pant_denim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pant_greenpng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pant_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\33.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\38 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\52.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\54.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\55.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\58.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\59.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\64.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\65.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\66.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\67.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\68.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\69.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\70.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\72.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\73.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\74.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\75.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\76.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\77.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\78.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\79.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\80.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\myimg.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n1 .PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n9.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n10.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tshirt_olive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tshirt_orange_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n7.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n26.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n8.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\n20.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r8.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r5.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r6.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r11.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r12.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r13.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r14.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r19.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r18.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r17.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r16.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r15.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r27.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r22.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r23.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r24.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r25.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r30.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r29.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r28.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r39.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r32.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r33.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r34.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r35.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r38.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r40.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r49.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r41.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r42.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r43.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r44.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r46.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r47.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r48.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r45.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r50.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medium.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\large.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extralarge.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

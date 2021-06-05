@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Prism</id>
+    <version>5.0.0</version>
+    <title>Prism (Deprecated)</title>
+    <authors>Microsoft patterns &amp; practices</authors>
+    <owners>Microsoft patterns &amp; practices</owners>
+    <licenseUrl>http://compositewpf.codeplex.com/license</licenseUrl>
+    <projectUrl>http://prism.codeplex.com/</projectUrl>
+    <iconUrl>http://www.gravatar.com/avatar/7db4eb02e62dfb5df5067169d12d9672?s=128&amp;r=g&amp;d=retro</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This package is no longer supported.  Please use the new Prism 6 packages which are all dependent on the Prism.Core package.
+
+Prism helps you more easily design and build rich, flexible, and easy to maintain Windows Presentation Foundation (WPF) desktop applications. These libraries assist in buildling loosley coupled applications as well as support implementing MVVM in your applications.  To get the most of these libraries, follow the More information link above.</description>
+    <summary>This package is no longer supported.  Please use the new Prism 6 packages which are all dependent on the Prism.Core package.
+
+Prism libraries for WPF, including the following NuGet packages: Prism.Composition, Prism.Interactivity, Prism.PubSubEvents, and Prism.Mvvm.</summary>
+    <language />
+    <dependencies>
+      <dependency id="Prism.Composition" version="5.0.0" />
+      <dependency id="Prism.Interactivity" version="5.0.0" />
+      <dependency id="Prism.PubSubEvents" version="1.0.0" />
+      <dependency id="Prism.Mvvm" version="1.0.0" />
+    </dependencies>
+  </metadata>
+</package>
